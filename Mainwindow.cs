@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace CRLchain
@@ -19,6 +18,11 @@ namespace CRLchain
         private void Mainwindow_Load(object sender, EventArgs e)
         {
             //тут должен быть http request для обновления локальной цепочки
+
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }

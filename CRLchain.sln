@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCHinterface", "BCHinterface.csproj", "{CC1BA54C-D0DC-4E04-BE23-54785B4CAC77}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "blockchain", "..\blockchain\blockchain.pyproj", "{5C142ACA-3BC1-44EB-9F2E-4B01F594C583}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{CC1BA54C-D0DC-4E04-BE23-54785B4CAC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC1BA54C-D0DC-4E04-BE23-54785B4CAC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC1BA54C-D0DC-4E04-BE23-54785B4CAC77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C142ACA-3BC1-44EB-9F2E-4B01F594C583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C142ACA-3BC1-44EB-9F2E-4B01F594C583}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

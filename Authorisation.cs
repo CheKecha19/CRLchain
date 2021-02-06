@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace CRLchain
 {
@@ -28,6 +22,7 @@ namespace CRLchain
             {
                 try
                 {
+                    //отправка запроса на сервер/бд для вытягивания логина и пароля
 
                 }
                 catch
@@ -44,6 +39,13 @@ namespace CRLchain
         {
             ErrorMessage error = new ErrorMessage();
             Show(error);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registration registration = new Registration();
+            Show(registration);
+            Close();
         }
     }
 }

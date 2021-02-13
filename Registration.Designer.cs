@@ -36,6 +36,7 @@ namespace CRLchain
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -90,7 +91,6 @@ namespace CRLchain
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Пользователь";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -102,13 +102,21 @@ namespace CRLchain
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "УЦ";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(163, 60);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(109, 20);
+            this.textBox3.TabIndex = 7;
+            this.textBox3.VisibleChanged += new System.EventHandler(this.textBox3_VisibleChanged);
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 130);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox2);
@@ -132,5 +140,6 @@ namespace CRLchain
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

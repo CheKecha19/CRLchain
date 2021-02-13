@@ -69,5 +69,35 @@ namespace CRLchain {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kak_vnedrit_elektronnyy_dokumentooborot_v_kompanii_1 {
+            get {
+                object obj = ResourceManager.GetObject("kak_vnedrit_elektronnyy_dokumentooborot_v_kompanii_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mw {
+            get {
+                object obj = ResourceManager.GetObject("mw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_behavior_width_750 {
+            get {
+                object obj = ResourceManager.GetObject("user-behavior.width-750", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

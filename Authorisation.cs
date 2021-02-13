@@ -24,18 +24,21 @@ namespace CRLchain
                 {
                     //отправка запроса на сервер/бд для вытягивания логина и пароля
 
+                    //проверка на правильность
+
+                    Mainwindow mainwindow = new Mainwindow();
+                    Show(mainwindow);
                 }
                 catch
                 {
                     SendError();
                 }
             }
-            //проверка на правильность
 
 
         }
 
-        private void SendError()
+        public void SendError()
         {
             ErrorMessage error = new ErrorMessage();
             Show(error);

@@ -212,6 +212,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
@@ -236,6 +237,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ErrorMessagePicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-behavior.width-750.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kak_vnedrit_elektronnyy_dokumentooborot_v_kompanii_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_UhNk4YpmECWHaCgi.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

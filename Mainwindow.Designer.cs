@@ -29,86 +29,112 @@ namespace CRLchain
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.главнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.пользовательToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.профильToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.моиСертификатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.statusStrip1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // statusStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.главнаяToolStripMenuItem,
-            this.пользовательToolStripMenuItem,
-            this.выходToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripProgressBar1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
             // 
-            // главнаяToolStripMenuItem
+            // toolStripStatusLabel1
             // 
-            this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
-            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.главнаяToolStripMenuItem.Text = "Главная";
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(58, 17);
+            this.toolStripStatusLabel1.Text = "Загрузка:";
             // 
-            // пользовательToolStripMenuItem
+            // toolStripProgressBar1
             // 
-            this.пользовательToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.профильToolStripMenuItem,
-            this.моиСертификатыToolStripMenuItem});
-            this.пользовательToolStripMenuItem.Name = "пользовательToolStripMenuItem";
-            this.пользовательToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.пользовательToolStripMenuItem.Text = "Пользователь";
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(500, 16);
+            this.toolStripProgressBar1.Step = 1;
+            this.toolStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.toolStripProgressBar1.Value = 15;
             // 
-            // выходToolStripMenuItem
+            // tabControl1
             // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(0, 1);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(800, 424);
+            this.tabControl1.TabIndex = 3;
             // 
-            // профильToolStripMenuItem
+            // tabPage1
             // 
-            this.профильToolStripMenuItem.Name = "профильToolStripMenuItem";
-            this.профильToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.профильToolStripMenuItem.Text = "Профиль";
+            this.tabPage1.BackgroundImage = global::CRLchain.Resource1.mw;
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(792, 398);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Главная";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // моиСертификатыToolStripMenuItem
+            // tabPage2
             // 
-            this.моиСертификатыToolStripMenuItem.Name = "моиСертификатыToolStripMenuItem";
-            this.моиСертификатыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.моиСертификатыToolStripMenuItem.Text = "Мои сертификаты";
+            this.tabPage2.BackgroundImage = global::CRLchain.Resource1.user_behavior_width_750;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 398);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Пользователь";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackgroundImage = global::CRLchain.Resource1.kak_vnedrit_elektronnyy_dokumentooborot_v_kompanii_1;
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(792, 398);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Мои сертификаты";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.statusStrip1);
             this.Name = "Mainwindow";
             this.Text = "morda";
             this.Load += new System.EventHandler(this.Mainwindow_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem главнаяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem пользовательToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem профильToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem моиСертификатыToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 

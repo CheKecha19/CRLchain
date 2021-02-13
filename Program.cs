@@ -14,7 +14,7 @@ namespace CRLchain
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //запускающаяся при открытии приложения форма .Run
-            Application.Run(new Authorisation());
+            Application.Run(new Registration());
         }
     }
 }
